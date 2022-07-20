@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+:focus {
+	outline: none;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+picture,
+img,
+svg {
+	display: block;
+	border: none;
+}
+
+input,
+button {
+	font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+}

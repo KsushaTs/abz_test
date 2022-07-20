@@ -1,0 +1,64 @@
+@import "../../style/variables";
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	height: 500px;
+	padding-top: 40px;
+	position: relative;
+	margin: 0 auto;
+	background: #000000;
+
+	@media (min-width: $breakpoint-m) {
+		padding-top: 89px;
+	}
+
+	@media (min-width: $breakpoint-l) {
+		padding-top: 164px;
+		height: 650px;
+	}
+
+}
+
+.img {
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	picture,
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.block {
+	position: relative;
+	z-index: 1;
+	padding: 0 16px;
+
+	@media (min-width: $breakpoint-m) {
+		max-width: 380px;
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+
+.text_block {
+	color: var(--title-color);
+	margin-bottom: 32px;
+}
+
+.title {
+	margin-bottom: 21px;
+}
+
+.button {
+	margin: 0 auto;
+}

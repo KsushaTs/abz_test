@@ -1,0 +1,18 @@
+:root {
+	--font-family: 'Nunito', sans-serif;
+	--main-color: rgba(0, 0, 0, 0.87);
+	--title-color: #FFFFFF;
+	--disabled-color: rgba(255, 255, 255, 0.87);
+	--main-bg: #F8F8F8;
+	--button-bg: #F4E041;
+	--button-hover-bg: #FFE302;
+	--button-disabled-bg: #B4B4B4;
+	--checked: #00BDD3;
+	--unchecked: #D0CFCF;
+	--input-color: #7E7E7E;
+	--error: #CB3D40;
+}
+
+@import "./variables";
+@import "./reset";
+@import "./common";

@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/nunito.woff2') format('woff2'),
+		url('../fonts/nunito.woff') format('woff');
+	font-display: swap;
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--main-color);
+	background: var(--main-bg);
+	font-size: 16px;
+	line-height: 1.15;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 0 auto;
+
+	@media (min-width: $breakpoint-m) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@media (min-width: $breakpoint-l) {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	@media (min-width: $breakpoint-xl) {
+		padding: 0;
+	}
+
+}
+
+.page {
+	padding: 60px 0 100px;
+}
+
+.section {
+	padding-top: 140px;
+
+	h2 {
+		padding-bottom: 50px;
+	}
+}
+
+.title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 1;
+	text-align: center;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	text-align: center;
+}
+
+.button {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1;
+	outline: none;
+	appearance: button;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	cursor: pointer;
+	border: none;
+	border-radius: 80px;
+	transition: color 0.3s, background 0.3s;
+
+	&_yellow {
+		color: var(--main-color);
+		background: var(--button-bg);
+
+		&:hover {
+			background: var(--button-hover-bg);
+		}
+
+		&:disabled {
+			background: var(--button-disabled-bg);
+			color: var(--disabled-color);
+		}
+	}
+
+	&_s {
+		width: 100px;
+	}
+
+	&_m {
+		width: 120px;
+	}
+}
+
+.MuiTooltip-tooltip {
+	background-color: black !important;
+}
+
+.error-message {}
