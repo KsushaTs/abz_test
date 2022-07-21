@@ -13,10 +13,10 @@ const Card = ({ user }) => {
 
   return (
     <div className={styles.card}>
-      <Link className={styles.photo} to={`/users/:userId`}>
+      <Link className={styles.photo} to={`/users/${user?.id}`}>
         <img src={user?.photo} alt="user" />
       </Link>
-      <Link className={classNames("text", styles.name)} to={`/users/:userId`}>
+      <Link className={classNames("text", styles.name)} to={`/users/${user?.id}`}>
         {user?.name}
       </Link>
 
